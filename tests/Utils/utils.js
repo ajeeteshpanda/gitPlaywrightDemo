@@ -4,6 +4,11 @@ class Byte {
     {
         this.page = page;
     }
+
+    async happy()
+    {
+        console.log("Happy Path");
+    }
 }
 
 module.exports = {Byte}
