@@ -10,6 +10,12 @@ class Byte {
         console.log("Happy Path");
         console.log("Sad Path");
     }
+
+    async sad()
+    {
+        console.log("Happy Path");
+        console.log("Sad Path");
+    }
 }
 
 module.exports = {Byte}
