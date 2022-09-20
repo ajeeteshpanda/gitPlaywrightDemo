@@ -8,6 +8,7 @@ class Byte {
     async happy()
     {
         console.log("Happy Path");
+        console.log("Sad Path");
     }
 }
 
