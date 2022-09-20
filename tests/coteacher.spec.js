@@ -47,3 +47,5 @@ test('chatbot07pc', async function({page})
             }
 }
 });
+
+let staging = "code for staging";
