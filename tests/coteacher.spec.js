@@ -49,3 +49,5 @@ test('chatbot07pc', async function({page})
 });
 
 let staging = "code for staging";
+
+let master = "Added a line for master";
