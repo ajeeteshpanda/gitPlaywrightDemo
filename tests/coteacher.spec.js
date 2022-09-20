@@ -10,6 +10,8 @@ test.beforeAll( async()=>
     const loginResponse = await apiContext.post("https://devuserapi.bytelearn.ai/api/v1/user/login",
     {data: (loginPayload)});
 
+    let newanswer = "expected"
+
     expect(loginResponse.ok()).toBeTruthy();
     console.log(loginResponse.status())
     const loginResponseJSON = await loginResponse.json();
