@@ -4,21 +4,6 @@ const loginPayload = {provider: "local", email: "ajeetesh.panda@bytelearn.ai", p
 let token;
 let chapters;
 
-test.beforeAll( async()=> 
-{
-    const apiContext = await request.newContext();
-    const loginResponse = await apiContext.post("https://devuserapi.bytelearn.ai/api/v1/user/login",
-    {data: (loginPayload)});
-
-    let newanswer = "expected"
-
-    expect(loginResponse.ok()).toBeTruthy();
-    console.log(loginResponse.status())
-    const loginResponseJSON = await loginResponse.json();
-    token = loginResponseJSON.access_token;
-
-});
-
 test('chatbot07pc', async function({page})
 {
     page.addInitScript(value => 
